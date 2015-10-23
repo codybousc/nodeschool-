@@ -28,10 +28,22 @@
 //   return reger.test(str);
 // }
 
-// #5
+// // #5
+//
+//
+// module.exports = function(str) {
+//   var reger = /[^0-9][^A-Z]/;
+//   return reger.test(str);
+// }
 
+// #6
+
+// not working yet.
+// passing for:
+// ...
+// ...\n
 
 module.exports = function(str) {
-  var reger = /[^0-9][^A-Z]/;
+  var reger = /[\.$]/;
   return reger.test(str);
 }
