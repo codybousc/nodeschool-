@@ -38,12 +38,17 @@
 
 // #6
 
-// not working yet.
-// passing for:
-// ...
-// ...\n
+
+// module.exports = function(str) {
+//   var reger = /\.$/;
+//   return reger.test(str);
+// }
+
+// #7
+
 
 module.exports = function(str) {
-  var reger = /\.$/;
+  //var reger = /^[0-9]\.jpe?g$/; initial attempt. needed to put the second portion in parens
+  var reger = /^[0-9]+(\.jpe?g$)/;
   return reger.test(str);
 }
