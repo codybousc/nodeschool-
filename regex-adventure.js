@@ -23,7 +23,15 @@
 // #4
 
 
+// module.exports = function(str) {
+//   var reger = /^[aeiou0-9]/;
+//   return reger.test(str);
+// }
+
+// #5
+
+
 module.exports = function(str) {
-  var reger = /^[aeiou0-9]/;
+  var reger = /[^0-9][^A-Z]/;
   return reger.test(str);
 }
