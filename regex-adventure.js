@@ -15,7 +15,15 @@
 //
 // #3
 
+// module.exports = function(str) {
+//   var reger = /BANANAS$/;
+//   return reger.test(str);
+// }
+
+// #4
+
+
 module.exports = function(str) {
-  var reger = /BANANAS$/;
+  var reger = /^[aeiou0-9]/;
   return reger.test(str);
 }
