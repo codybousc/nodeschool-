@@ -44,6 +44,6 @@
 // ...\n
 
 module.exports = function(str) {
-  var reger = /[\.$]/;
+  var reger = /\.$/;
   return reger.test(str);
 }
