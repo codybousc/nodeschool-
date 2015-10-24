@@ -54,7 +54,14 @@
 // }
 
 // #8
-module.exports = function(str) {
-  str = str.replace(/\s/g, ""); 
-  return str.split(/,/g);
-}
+// module.exports = function(str) {
+//   str = str.replace(/\s/g, "");
+//   return str.split(/,/g);
+// }
+
+//#9
+
+module.exports = function (str) {
+  var m = /x=(\d+)/g.exec(str);
+ return m ? m[1] : null 
+  }
